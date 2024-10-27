@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+  <head>
+  	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link href="/script/practice.css" rel="stylesheet" />
+    <script src="script/bootstrap.js"></script>
+    <link href="script/bootstrap.css" rel="stylesheet">
+    <script>
+      let message = "hello message";
+      console.log (message)
+      console.error ("error")
+      console.warning ("warning")
+      
+      let num = 20;
+
+      if ((num%2) = 0){
+        console.log ("even number")
+      }else{
+        console.log ("odd number")}
+
+    </script>
+
+
+  </head>
+  <body>
+    <div>
+      <form>
+        <label for="phonenumber">Enter Phone #</label>
+        <input type="number" id="phonenumber" placeholder="E.g. 87654321" class="form-control">
+        <p id="phonenumerror" class="text-danger d-none">Field cannot be skibidi.</p>
+        <button type="button" class="btn btn-primary" onclick="skibidi()">Submit</button>
+      </form>
+    </div>
+    <script>
+      const skibidi = () => {
+        let usernum = document.getElementById("phonenumber").value.length; 
+        } if (usernum == 0) {
+          document.getElementById("phonenumber").classList = ("form-control is-invalid");
+          document.getElementById("phonenumerror").classList = ("text-danger");
+        } else {
+          document.getElementById("phonenumber").classList = ("form-control");
+          document.getElementById("phonenumerror").classList = ("text-danger d-none");
+        }
+    </script>
+    
+  </body>
+</html>
