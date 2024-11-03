@@ -53,39 +53,50 @@
 			<div class="row gy-3">
 				<!-- Label: Name*
 						 Text Input field -->
+						
 						 <div class="row-1">
 							<div class= "col-2">
 								<div>
-									<label for="fName">First Name</label>
+									<label for="Name">First Name</label>
 								</div>
-								<div>
-									<input type="text" id="fName" class="form-control">
+								<div class="col col-6">
+									<input type="text" id="Name" class="form-control">
 								</div>
 							</div>
 						 </div>
 						 <div class="row-1"></div>
+						 <div>
+							<p id="NameValidation" class="d-none text-danger">Field cannot be empty</p>
+						</div>
 							<div class= "col-2">
 								<div>
-									<label for="lName">Last Name</label>
+									<label for="email">Last Name</label>
 								</div>
-								<div>
-									<input type="text" id="lName" class="form-control">
+								<div class="col col-6">
+									<input type="text" id="email" class="form-control">
 								</div>
 							</div>
 						 </div>
+						 <div>
+							<p id="EmailValidation" class="d-none text-danger">Field cannot be empty</p>
+						</div>
 
 				<!-- Label: Email Address*
 						 Email Input field -->
 						 <div class="row-1"></div>
 							<div class= "col-2">
 								<div>
-									<label for="Contact Number">Contact Number</label>
+									<label for="subject1">Contact Number</label>
 								</div>
-								<div>
-									<input type="text" id="Contact Number" class="form-control">
+								<div class = "col col-12">
+									<input type="text" id="subject1" class="form-control">
 								</div>
 							</div>
 						 </div>
+						 <div>
+							<p id="Subject1Validation" class="d-none text-danger">Field cannot be empty</p>
+						</div>
+
 				<!-- Label: Subject*
 						 Text Input field with placeholder text "Enquiry on how to code"-->
 						 <div class="row-1"></div>
@@ -94,7 +105,7 @@
 									<label for="subject">Subject</label>
 								</div>
 								<div>
-									<input type="text" id="subject" class="form-control">
+									<textarea type="text" id="subject" rows = "5" class="form-control col col-12"> </textarea>
 								</div>
 							</div>
 						 </div>
@@ -119,16 +130,6 @@
 	</article>
 	<!-- End of coding region -->
 	<footer class="bg-dark text-light"><div class="container py-2 pb-4">Done by Couch Kids US.</div></footer>
-	<script>
-		function validate(){
-	console.log("button is clicked")
 
-	let firstName = document.getelementbyID{'fName'}.value;
-	if (firstName === ""){
-		console.error("first name is empty")
-	}else
-		console.log("first name is" +  fName)
-}
-</script>
 </body>
 </html>
